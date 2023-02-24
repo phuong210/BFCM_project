@@ -49,6 +49,9 @@
     font-weight: 600;
 }
 /* spacing */
+.ml-10 {
+    margin-left: 1rem;
+}
 .mt-15 {
     margin-top: 1.5rem;
 }

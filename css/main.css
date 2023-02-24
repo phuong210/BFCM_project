@@ -148,15 +148,20 @@ main {
     border: unset;
     width: 5rem;
     height: 5rem;
-}
-.button__up {
     background: var(--red-cl);
 }
+.button__minus {
+    opacity: 0.15;
+}
+.button img {
+    margin: 0 auto;
+}
+
 .button__add {
     background: var(--red-cl);
     padding-top: 1.3rem;
     padding-bottom: 1.3rem;
-    margin-left: 0.9rem;
+    /* margin-left: 0.9rem; */
     flex: 2;
 }
 
@@ -168,10 +173,7 @@ main {
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
-video[poster] {
-    height: 100%;
-    width: 100%;
-}
+
 .banner__desc {
     max-width: 52rem;
     margin: 1.5rem auto 0;
@@ -286,6 +288,9 @@ video[poster] {
 @media (min-width: 768px) {
     .testimonial__wrap {
         gap: var(--gap);
+    }
+    iframe {
+        height: 610px;
     }
 }
 
