@@ -244,6 +244,7 @@ main {
 
 .faq__accordion-item.active .accordion-answer {
     display: block;
+    transition: 0.7s;
 }
 
 /* wrap */
