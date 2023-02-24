@@ -20,8 +20,8 @@ function showDivs(n) {
 }
 
 // countdown
-const countdown = () => {
-    let countDownDate = new Date(" Feb 28, 2023 15:47:25").getTime();
+window.onload = function what(){
+   let countDownDate = new Date(" Feb 28, 2023 15:47:25").getTime();
     let countdownText = document.querySelector('.countdown');
     let x = setInterval(()=> {
         let now = new Date().getTime();
@@ -42,20 +42,50 @@ const countdown = () => {
             <p class="pl-18 pr-18">:</p>
             <p>${seconds}<span class="d-block h5">Secs</span></p>
         </div>
-        `
+        `;
        
         if (distance < 0) {
             clearInterval(x);
             countdownText.innerHTML = "EXPIRED";
         }
     }, 1000)
-}
-window.onload = function () {
-  what();
-  function what() {
-    countdown();
-  }
-}
+};
+// const countdown = () => {
+//     let countDownDate = new Date(" Feb 28, 2023 15:47:25").getTime();
+//     let countdownText = document.querySelector('.countdown');
+//     let x = setInterval(()=> {
+//         let now = new Date().getTime();
+//         let distance = countDownDate - now;
+
+//         let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//         let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//         let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//         let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+//         countdownText.innerHTML = `
+//         <div class="d-flex justify-center countdown__timer fw-500">
+//             <p>${days}<span class="d-block h5">Days</span></p>
+//             <p class="pl-18 pr-18">:</p>
+//             <p>${hours}<span class="d-block h5">Hours</span></p>
+//             <p class="pl-18 pr-18">:</p>
+//             <p>${minutes}<span class="d-block h5">Mins</span></p>
+//             <p class="pl-18 pr-18">:</p>
+//             <p>${seconds}<span class="d-block h5">Secs</span></p>
+//         </div>
+//         `;
+       
+//         if (distance < 0) {
+//             clearInterval(x);
+//             countdownText.innerHTML = "EXPIRED";
+//         }
+//     }, 1000)
+// }
+// window.onload = function () {
+//   what();
+//   function what() {
+//     countdown();
+//   }
+// }
 // countdown();
 
 // faq
