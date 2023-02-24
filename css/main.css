@@ -40,7 +40,7 @@ body {
     color: var(--text-cl);
     font-size: 1.6rem;
     font-weight: 400;
-    letter-spacing: 1.5;
+    line-height: 1.5;
     margin: auto;
     width: 100%;
     background: var(--white-cl);
@@ -91,7 +91,7 @@ main {
 /* product */
 
 .product-wrap {
-    gap: var(--gap);
+    gap: 3rem;
 }
 .product__img {
     grid-template-columns: 16% 1fr;
@@ -100,15 +100,11 @@ main {
 .slider__img {
     opacity: 0.5;
 }
-.product__content h3 {
-    font-weight: 400;
-    color: var(--red-cl);
-}
+
 .price {
     font-size: 2.4rem;
     color: var(--red-bold-cl);
     line-height: 1;
-    font-weight: 500;
 }
 .price span {
     color: #848484;
@@ -120,15 +116,15 @@ main {
     gap: 1.5rem;
 }
 .product__form-control {
+    font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
     min-width: 13rem;
     width: 100%;
 }
 .countdown {
     border: 1px solid #1a1a1a;
-    max-width: 30rem;
+    max-width: 28rem;
     width: 100%;
-    padding: 2rem;
 }
 .countdown__timer {
     font-size: 2.4rem;
@@ -236,7 +232,7 @@ main {
 
 .accordion-answer {
     padding-top: 2rem;
-    padding-bottom: 2.5rem;
+    /* padding-bottom: 2.5rem; */
     display: none;
     transition: 0.6s ease-in-out;
 }
@@ -258,15 +254,22 @@ main {
 /* daily */
 .daily__content {
     max-width: 62rem;
-    margin: 0 auto 8rem;
+    margin: 0 auto 5rem;
 }
-.daily__img {
+.daily__content-title {
+    font-size: 2.8rem;
+    line-height: 1.7;
+}
+/* .daily__img {
     width: 100vw;
-}
+} */
 
 /* deal */
 .deal__wrap-item {
     margin-bottom: 4rem;
+}
+.deal__wrap-item:last-child {
+    margin-bottom: 0;
 }
 .update__wrap,
 .get__wrap {
@@ -290,7 +293,9 @@ main {
     .header__logo {
         width: 12rem;
     }
-
+    .product-wrap {
+        gap: var(--gap);
+    }
     .banner {
         padding-top: 29rem;
         padding-bottom: 29rem;
@@ -301,6 +306,12 @@ main {
     .faq__accordion {
         padding-left: 6.5rem;
         padding-right: 5rem;
+    }
+    .daily__content {
+        margin-bottom: 8rem;
+    }
+    .daily__content-title {
+        font-size: 3.2rem;
     }
 
     .testimonial__wrap {
