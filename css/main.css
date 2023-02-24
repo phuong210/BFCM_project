@@ -215,9 +215,11 @@ main {
 
 .accordion {
     min-width: 320px;
-    padding-left: 6.5rem;
+    padding-left: 1.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     margin: auto 0;
-    padding-right: 5rem;
+    padding-right: 1.5rem;
 }
 .accordion__item {
     border-top: 1px solid #f4c6cb;
@@ -347,7 +349,7 @@ main {
         margin-bottom: 6rem;
     }
 
-    .faq__accordion {
+    .accordion {
         padding-left: 6.5rem;
         padding-right: 5rem;
     }
