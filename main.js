@@ -42,20 +42,3 @@ const countdown = () => {
 }
 countdown();
 
-// faq
-const faq = () => {
-    let answers = document.querySelectorAll(".faq__accordion-item");
-        answers.forEach((event)=>{
-            event.addEventListener('click',()=>{
-                console.log(1);
-                if(event.classList.contains("active")){
-                    event.classList.remove("active");
-                }
-                else{
-                    event.classList.add("active");
-                }
-            })
-        })
-
-}
-faq();
