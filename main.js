@@ -50,7 +50,13 @@ const countdown = () => {
         }
     }, 1000)
 }
-countdown();
+window.onload = function () {
+  what();
+  function what() {
+    countdown();
+  }
+}
+// countdown();
 
 // faq
 const faq = () => {
