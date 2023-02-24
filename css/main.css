@@ -123,12 +123,11 @@ main {
 }
 .countdown {
     border: 1px solid #1a1a1a;
-    max-width: 28rem;
+    max-width: 30rem;
     width: 100%;
 }
 .countdown__timer {
     font-size: 2.4rem;
-    /* text-align: center; */
 }
 .countdown__desc {
     gap: 3.7rem;
@@ -260,9 +259,6 @@ main {
     font-size: 2.8rem;
     line-height: 1.7;
 }
-/* .daily__img {
-    width: 100vw;
-} */
 
 /* deal */
 .deal__wrap-item {

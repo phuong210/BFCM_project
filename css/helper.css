@@ -91,6 +91,12 @@
 .pb-15 {
     padding-bottom: 1.5rem;
 }
+.pl-18 {
+    padding-left: 1.8rem;
+}
+.pr-18 {
+    padding-right: 1.8rem;
+}
 .pr-20 {
     padding-right: 2rem;
 }
@@ -144,6 +150,9 @@
 /*  */
 .d-block {
     display: block;
+}
+.d-inline-block {
+    display: inline-block;
 }
 /*  flex */
 .d-flex {
