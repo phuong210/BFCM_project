@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BFCM</title>
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/helper.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container d-flex align-center justify-space-between">
+        <a href="index.html" class="header__logo"
+          ><img src="./img/logo.svg" alt=""
+        /></a>
+        <div class="header__item">
+          <ul
+            class="header__item-menu d-none d-flex-md align-center justify-space-between"
+          >
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+          <p class="header__item-toggle d-none-md"></p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="product section">
+        <div class="container">
+          <div class="d-grid product-wrap grid-column-2-lg">
+            <div class="product__img d-grid">
+              <ul class="product__img-list">
+                <li>
+                  <img
+                    class="w-100 hg-100 fit-cover slider-img"
+                    src="./img/product.jpg"
+                    alt=""
+                    onclick="currentDiv(1)"
+                    style="opacity: 1"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="w-100 hg-100 fit-cover slider-img"
+                    src="./img/get1.jpg"
+                    alt=""
+                    onclick="currentDiv(2)"
+                  />
+                </li>
+              </ul>
+              <img
+                style="width: 100%"
+                class="w-100 hg-100 fit-cover slider"
+                src="./img/product.jpg"
+                alt=""
+              />
+              <img
+                style="display: none"
+                class="w-100 hg-100 fit-cover slider"
+                src="./img/get1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="product__content">
+              <h3 class="h1 font-family-didot">50% Off</h3>
+              <h2 class="h1 mt-15 pb-30">Grey T-shirt</h2>
+              <p class="price d-flex align-center pt-30 border-top">
+                $30 <span class="pl-10">$60</span>
+              </p>
+              <div class="product__content-size d-flex align-center mt-20">
+                <div class="product__form d-flex flex-column">
+                  <label class="fw-600 pb-05" for="size">Size</label>
+                  <select class="product__form-control fw-500" id="size">
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>L</option>
+                    <option>M</option>
+                    <option>S</option>
+                  </select>
+                </div>
+                <div class="product__form d-flex flex-column">
+                  <label class="fw-600 pb-05" for="color">Color</label>
+                  <select class="product__form-control fw-500" id="color">
+                    <option>White</option>
+                    <option>Red</option>
+                    <option>Black</option>
+                    <option>M</option>
+                    <option>S</option>
+                  </select>
+                </div>
+              </div>
+              <p class="mt-20">
+                A perfect way for you to create an inviting atmosphere in your
+                home. This print gives you the freedom to be as creative as you
+                would like, because it can be personalized. Hang it in your
+                living room or any area you frequent as a keepsake and a
+                timeless decoration that can last a long time.
+              </p>
+              <div class="product__content-day mt-30 pb-30">
+                <p class="fw-600 pb-05">Sale In:</p>
+                <div class="countdown">
+                  <p class="countdown__timer fw-500"></p>
+                  <div class="d-flex align-center countdown__desc">
+                    <p class="h4 fw-500">Days</p>
+                    <p class="h4 fw-500">Hours</p>
+                    <p class="h4 fw-500">Mins</p>
+                    <p class="h4 fw-500">Secs</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="product__content-btn pt-30 border-top d-flex align-center"
+              >
+                <div class="d-flex align-center">
+                  <button class="button button__down cursor-pointer">-</button>
+                  <p class="button__number border">1</p>
+                  <button class="button button__up cursor-pointer">+</button>
+                </div>
+                <a href="" class="button__add fw-500 text-white text-center"
+                  >Add To Cart</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner text-center">
+        <div class="container">
+          <h2 class="h2 text-uppercase text-white font-family-didot">
+            Competitive advantage
+          </h2>
+          <p class="banner__desc text-white">
+            Let’s show specification, advantage or difference of your product
+            inform a short paragraph, combine them with real-life image to
+            convince people buy your product
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="d-grid grid-column-2-md faq">
+          <img class="w-100 hg-100 fit-cover" src="./img/faq.jpg" alt="" />
+          <div class="faq__accordion">
+            <div class="faq__accordion-item">
+              <div class="accordion__link cursor-pointer d-flex align-center">
+                <p class="accordion__link-text fw-500 text-uppercase">
+                  STYLE ADVICE
+                </p>
+              </div>
+              <ul class="accordion-answer">
+                <li class="pb-10">Inspired by vintage sportswear</li>
+                <li class="pb-10">Slim fit</li>
+                <li class="pb-10">Super soft cotton mix</li>
+                <li class="pb-10">Brushed-back fleece</li>
+                <li class="pb-10">Graphics at the chest</li>
+                <li>Our model wears a size 11</li>
+              </ul>
+            </div>
+            <div class="faq__accordion-item">
+              <div class="accordion__link cursor-pointer d-flex align-center">
+                <p class="accordion__link-text fw-500 text-uppercase">
+                  Care advice
+                </p>
+              </div>
+              <ul class="accordion-answer">
+                <li class="pb-10">Inspired by vintage sportswear</li>
+                <li class="pb-10">Slim fit</li>
+                <li class="pb-10">Super soft cotton mix</li>
+                <li class="pb-10">Brushed-back fleece</li>
+                <li class="pb-10">Graphics at the chest</li>
+                <li>Our model wears a size 11</li>
+              </ul>
+            </div>
+            <div class="faq__accordion-item">
+              <div class="accordion__link cursor-pointer d-flex align-center">
+                <p class="accordion__link-text fw-500 text-uppercase">
+                  Expert care
+                </p>
+              </div>
+              <ul class="accordion-answer">
+                <li class="pb-10">Inspired by vintage sportswear</li>
+                <li class="pb-10">Slim fit</li>
+                <li class="pb-10">Super soft cotton mix</li>
+                <li class="pb-10">Brushed-back fleece</li>
+                <li class="pb-10">Graphics at the chest</li>
+                <li>Our model wears a size 11</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial section">
+        <div class="container">
+          <h2 class="heading text-uppercase text-center pb-30">testimonial</h2>
+          <div class="testimonial__wrap grid-column-2-md">
+            <div class="testimonial__wrap-item hg-100">
+              <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
+              <div class="wrap__content text-center mt-15">
+                <h4>My new shirt</h4>
+                <p class="h4 mt-15">
+                  I've been waiting for this deal since july and just got the
+                  shirt yesterday. What a deal!
+                </p>
+                <p class="mt-15 wrap__content-desc">Eleven</p>
+              </div>
+            </div>
+            <div class="testimonial__wrap-item hg-100">
+              <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
+              <div class="wrap__content text-center mt-15">
+                <h4>My new shirt</h4>
+                <p class="h4 mt-15">
+                  I've been waiting for this deal since july and just got the
+                  shirt yesterday. What a deal!
+                </p>
+                <p class="mt-15 wrap__content-desc">Eleven</p>
+              </div>
+            </div>
+            <div class="testimonial__wrap-item hg-100">
+              <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
+              <div class="wrap__content text-center mt-15">
+                <h4>My new shirt</h4>
+                <p class="h4 mt-15">
+                  I've been waiting for this deal since july and just got the
+                  shirt yesterday. What a deal!
+                </p>
+                <p class="mt-15 wrap__content-desc">Eleven</p>
+              </div>
+            </div>
+            <div class="testimonial__wrap-item hg-100">
+              <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
+              <div class="wrap__content text-center mt-15">
+                <h4>My new shirt</h4>
+                <p class="h4 mt-15">
+                  I've been waiting for this deal since july and just got the
+                  shirt yesterday. What a deal!
+                </p>
+                <p class="mt-15 wrap__content-desc">Eleven</p>
+              </div>
+            </div>
+            <div class="testimonial__wrap-item hg-100">
+              <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
+              <div class="wrap__content text-center mt-15">
+                <h4>My new shirt</h4>
+                <p class="h4 mt-15">
+                  I've been waiting for this deal since july and just got the
+                  shirt yesterday. What a deal!
+                </p>
+                <p class="mt-15 wrap__content-desc">Eleven</p>
+              </div>
+            </div>
+            <div class="testimonial__wrap-item hg-100">
+              <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
+              <div class="wrap__content text-center mt-15">
+                <h4>My new shirt</h4>
+                <p class="h4 mt-15">
+                  I've been waiting for this deal since july and just got the
+                  shirt yesterday. What a deal!
+                </p>
+                <p class="mt-15 wrap__content-desc">Eleven</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="daily section text-center">
+        <div class="daily__content">
+          <h2 class="heading">Our Daily Street Style</h2>
+          <p class="mt-15">
+            Guide customer the best way to use your product and add a short
+            paragraph to encourage them complete the CTA here
+          </p>
+        </div>
+        <img class="daily__img" src="./img/banner.jpg" alt="" />
+      </section>
+      <section class="deal section text-center">
+        <div class="container">
+          <h2 class="h2">Get The Most From This Deal</h2>
+          <p class="mt-15">
+            Highlight key information to make people quickly impressed by your
+            service
+          </p>
+          <div class="deal__wrap mt-50 d-grid grid-column-3-lg grid-column-1">
+            <div class="deal__wrap-item">
+              <img src="./img/world.png" alt="" />
+              <p class="pt-15 h3">Worldwide Shipping</p>
+            </div>
+            <div class="deal__wrap-item">
+              <img src="./img/heart.png" alt="" />
+              <p class="pt-15 h3">International Warranty</p>
+            </div>
+            <div class="deal__wrap-item">
+              <img src="./img/check.png" alt="" />
+              <p class="pt-15 h3">100% secure checkout</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="update section">
+        <div class="container">
+          <h2 class="h2 text-center">Update your style</h2>
+          <div
+            class="update__wrap d-grid grid-column-2-md grid-column-4-lg mt-50"
+          >
+            <div class="update__wrap-item">
+              <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
+              <div class="wrap__content text-center mt-15">
+                <h4>T-shirt A04</h4>
+                <p class="price d-flex align-center justify-center mt-15">
+                  $30 <span class="pl-10">$60</span>
+                </p>
+                <a
+                  href=""
+                  class="button__add fw-500 d-block mt-15 text-white text-center"
+                  >Add To Cart</a
+                >
+              </div>
+            </div>
+            <div class="update__wrap-item">
+              <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
+              <div class="wrap__content text-center mt-15">
+                <h4>T-shirt A04</h4>
+                <p class="price d-flex align-center justify-center mt-15">
+                  $30 <span class="pl-10">$60</span>
+                </p>
+                <a
+                  href=""
+                  class="button__add fw-500 d-block mt-15 text-white text-center"
+                  >Add To Cart</a
+                >
+              </div>
+            </div>
+            <div class="update__wrap-item">
+              <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
+              <div class="wrap__content text-center mt-15">
+                <h4>T-shirt A04</h4>
+                <p class="price d-flex align-center justify-center mt-15">
+                  $30 <span class="pl-10">$60</span>
+                </p>
+                <a
+                  href=""
+                  class="button__add fw-500 d-block mt-15 text-white text-center"
+                  >Add To Cart</a
+                >
+              </div>
+            </div>
+            <div class="update__wrap-item">
+              <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
+              <div class="wrap__content text-center mt-15">
+                <h4>T-shirt A04</h4>
+                <p class="price d-flex align-center justify-center mt-15">
+                  $30 <span class="pl-10">$60</span>
+                </p>
+                <a
+                  href=""
+                  class="button__add fw-500 d-block mt-15 text-white text-center"
+                  >Add To Cart</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="get section">
+        <div class="container">
+          <h2 class="h2 text-center">Update your style</h2>
+          <div class="get__wrap d-grid grid-column-2-md grid-column-4-lg mt-50">
+            <img class="w-100 fit-cover" src="./img/get1.jpg" alt="" />
+            <img class="w-100 fit-cover" src="./img/get2.jpg" alt="" />
+            <img class="w-100 fit-cover" src="./img/get1.jpg" alt="" />
+            <img class="w-100 fit-cover" src="./img/get1.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div
+          class="d-flex flex-column align-center footer__content pt-15 pb-15"
+        >
+          <div class="footer__icons d-flex align-center">
+            <a href=""><img src="./img/fb.svg" alt="" /></a>
+            <a href=""><img src="./img/fb.svg" alt="" /></a>
+            <a href=""><img src="./img/fb.svg" alt="" /></a>
+          </div>
+          <p class="h3">@ Start, 2022. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
