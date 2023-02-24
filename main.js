@@ -22,7 +22,7 @@ function showDivs(n) {
 // countdown
 const countdown = () => {
     let countDownDate = new Date(" Feb 28, 2023 15:47:25").getTime();
-    let countdownText = document.querySelector('.countdown__timer');
+    let countdownText = document.querySelector('.countdown');
     let x = setInterval(()=> {
         let now = new Date().getTime();
         let distance = countDownDate - now;
@@ -31,20 +31,8 @@ const countdown = () => {
         let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-       
-        countdownText.innerHTML = `<p>${days}<span class="pl-25 pr-25">:</span>${hours}<span class="pl-25 pr-25">:</span>${minutes}<span class="pl-25 pr-25">:</span>${seconds}</p>`;
 
-        // countdownText.innerHTML = `
-        // <div class="d-flex">
-        //     <p>${days}<span class="d-block h5">Days</span></p>
-        //     <p class="pl-18 pr-18">:</p>
-        //     <p>${hours}<span class="d-block h5">Hours</span></p>
-        //     <p class="pl-18 pr-18">:</p>
-        //     <p>${minutes}<span class="d-block h5">Mins</span></p>
-        //     <p class="pl-18 pr-18">:</p>
-        //     <p>${seconds}<span class="d-block h5">Secs</span></p>
-        // </div>
-        // `
+        countdownText.innerHTML = `<div class="d-flex countdown__timer fw-500 justify-center"><p>${days}<span class="d-block h5">Days</span></p><p class="pl-18 pr-18">:</p><p>${hours}<span class="d-block h5">Hours</span></p><p class="pl-18 pr-18">:</p><p>${minutes}<span class="d-block h5">Mins</span></p><p class="pl-18 pr-18">:</p><p>${seconds}<span class="d-block h5">Secs</span></p></div>`
        
         if (distance < 0) {
             clearInterval(x);
