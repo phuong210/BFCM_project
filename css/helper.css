@@ -40,6 +40,9 @@
     font-family: "GFS Didot", serif;
 }
 @media (min-width: 1024px) {
+    .h3 {
+        font-size: 3rem;
+    }
     .heading {
         font-size: 3.2rem;
     }
