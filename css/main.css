@@ -301,10 +301,6 @@ main {
     max-width: 62rem;
     margin: 0 auto 5rem;
 }
-.daily__content-title {
-    font-size: 2.8rem;
-    line-height: 1.7;
-}
 
 /* deal */
 .deal__wrap-item {
@@ -354,9 +350,6 @@ main {
     }
     .daily__content {
         margin-bottom: 8rem;
-    }
-    .daily__content-title {
-        font-size: 3.2rem;
     }
 
     .deal__wrap {
