@@ -225,7 +225,6 @@ main {
 }
 .accordion__item {
     border-top: 1px solid #f4c6cb;
-    /* border-bottom: 1px solid #f4c6cb; */
     overflow: hidden;
 }
 .accordion__item:nth-child(2) {
