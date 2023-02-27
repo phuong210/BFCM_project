@@ -30,113 +30,101 @@
     <main>
       <section class="product section">
         <div class="container">
-          <div class="d-grid product-wrap grid-column-2-lg">
-            <div class="product__img d-grid">
-              <ul class="product__img-list">
-                <li>
+          <div class="row">
+            <div class="col" style="--w-lg: 6">
+              <div class="d-flex product__list">
+                <div class="product__list-thumnail">
                   <img
-                    class="w-100 hg-100 fit-cover slider-img"
-                    src="./img/product.jpg"
-                    alt=""
                     onclick="currentDiv(1)"
                     style="opacity: 1"
+                    src="./img/product.jpg"
+                    alt=""
                   />
-                </li>
-                <li>
+                  <img onclick="currentDiv(2)" src="./img/get1.jpg" alt="" />
+                </div>
+                <div class="product__list-img">
                   <img
-                    class="w-100 hg-100 fit-cover slider-img"
+                    class="fit-cover slider"
+                    src="./img/product.jpg"
+                    alt=""
+                  />
+                  <img
+                    style="display: none"
+                    class="fit-cover slider"
                     src="./img/get1.jpg"
                     alt=""
-                    onclick="currentDiv(2)"
                   />
-                </li>
-              </ul>
-              <img
-                style="width: 100%"
-                class="w-100 hg-100 fit-cover slider"
-                src="./img/product.jpg"
-                alt=""
-              />
-              <img
-                style="display: none"
-                class="w-100 hg-100 fit-cover slider"
-                src="./img/get1.jpg"
-                alt=""
-              />
+                </div>
+              </div>
             </div>
-            <div class="product__content">
-              <h3 class="h1 font-family-didot fw-400 text-red">50% Off</h3>
-              <h2 class="h1 mt-15 pb-30 fw-400">Grey T-shirt</h2>
-              <p class="price d-flex align-center pt-30 border-top fw-500">
-                $30 <span class="pl-10">$60</span>
-              </p>
-              <div class="product__content-size d-flex align-center mt-20">
-                <div class="product__form d-flex flex-column">
-                  <label class="fw-600 pb-05" for="size">Size</label>
-                  <select class="product__form-control fw-500" id="size">
-                    <option>XXL</option>
-                    <option>XL</option>
-                    <option>L</option>
-                    <option>M</option>
-                    <option>S</option>
-                  </select>
+            <div class="col" style="--w-lg: 6">
+              <div class="product__content mt-30">
+                <h3 class="h1 font-family-didot fw-400 text-red">50% Off</h3>
+                <h2 class="h1 mt-15 pb-30 fw-400">Grey T-shirt</h2>
+                <p class="price d-flex align-center pt-30 border-top fw-500">
+                  $30 <span class="pl-10">$60</span>
+                </p>
+                <div class="product__content-size d-flex align-center mt-20">
+                  <div class="product__form d-flex flex-column">
+                    <label class="fw-600 pb-05" for="size">Size</label>
+                    <select class="product__form-control fw-500" id="size">
+                      <option>XXL</option>
+                      <option>XL</option>
+                      <option>L</option>
+                      <option>M</option>
+                      <option>S</option>
+                    </select>
+                  </div>
+                  <div class="product__form d-flex flex-column">
+                    <label class="fw-600 pb-05" for="color">Color</label>
+                    <select class="product__form-control fw-500" id="color">
+                      <option>White</option>
+                      <option>Red</option>
+                      <option>Black</option>
+                      <option>M</option>
+                      <option>S</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="product__form d-flex flex-column">
-                  <label class="fw-600 pb-05" for="color">Color</label>
-                  <select class="product__form-control fw-500" id="color">
-                    <option>White</option>
-                    <option>Red</option>
-                    <option>Black</option>
-                    <option>M</option>
-                    <option>S</option>
-                  </select>
+                <p class="mt-20">
+                  A perfect way for you to create an inviting atmosphere in your
+                  home. This print gives you the freedom to be as creative as
+                  you would like, because it can be personalized. Hang it in
+                  your living room or any area you frequent as a keepsake and a
+                  timeless decoration that can last a long time.
+                </p>
+                <div class="product__content-day mt-30 pb-30">
+                  <p class="fw-600 pb-05">Sale In:</p>
+                  <div class="countdown text-center pd-10">
+                    <div class="countdown__timer fw-500"></div>
+                  </div>
                 </div>
-              </div>
-              <p class="mt-20">
-                A perfect way for you to create an inviting atmosphere in your
-                home. This print gives you the freedom to be as creative as you
-                would like, because it can be personalized. Hang it in your
-                living room or any area you frequent as a keepsake and a
-                timeless decoration that can last a long time.
-              </p>
-              <div class="product__content-day mt-30 pb-30">
-                <p class="fw-600 pb-05">Sale In:</p>
-                <div class="countdown text-center pd-10">
-                  <div class="countdown__timer fw-500"></div>
-                  <!-- <div
-                    class="d-flex align-center countdown__desc justify-center"
-                  >
-                    <p class="h5">Days</p>
-                    <p class="h5">Hours</p>
-                    <p class="h5">Mins</p>
-                    <p class="h5">Secs</p>
-                  </div> -->
-                </div>
-              </div>
-              <div
-                class="product__content-btn pt-30 border-top d-flex align-center"
-              >
-                <div class="d-flex align-center">
-                  <button
-                    class="button button__minus cursor-pointer text-white"
-                  >
-                    <img class="d-flex" src="./img/minus.svg" alt="" />
-                  </button>
-                  <p class="button__number border fw-600">1</p>
-                  <button class="button cursor-pointer text-white">
-                    <img class="d-flex" src="./img/plus.svg" alt="" />
-                  </button>
-                </div>
-                <a
-                  href=""
-                  class="button__add fw-500 text-white text-center ml-10"
-                  >Add To Cart</a
+                <div
+                  class="product__content-btn pt-30 border-top d-flex align-center"
                 >
+                  <div class="d-flex align-center">
+                    <button
+                      class="button button__minus cursor-pointer text-white"
+                    >
+                      <img class="d-flex" src="./img/minus.svg" alt="" />
+                    </button>
+                    <p class="button__number border fw-600">1</p>
+                    <button class="button cursor-pointer text-white">
+                      <img class="d-flex" src="./img/plus.svg" alt="" />
+                    </button>
+                  </div>
+                  <a
+                    href=""
+                    class="button__add fw-500 text-white text-center ml-10"
+                    >Add To Cart</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section class="banner text-center">
         <div class="container">
           <h2 class="h2 fw-400 text-uppercase text-white font-family-didot">
@@ -150,83 +138,87 @@
         </div>
       </section>
       <section class="section">
-        <div class="d-grid grid-column-2-md faq">
-          <img class="w-100 fit-cover" src="./img/faq.jpg" alt="" />
-          <div class="accordion">
-            <div class="accordion__item">
-              <input
-                id="accordion-trigger-1"
-                class="accordion-trigger-input"
-                type="checkbox"
-              />
-              <label
-                class="accordion-trigger fw-500 text-red text-uppercase"
-                for="accordion-trigger-1"
-                >STYLE ADVICE</label
-              >
-              <div class="accordion-animation-wrapper d-grid">
-                <div class="accordion-animation">
-                  <div class="accordion-transform-wrapper">
-                    <ul class="accordion-content">
-                      <li class="pb-10">Inspired by vintage sportswear</li>
-                      <li class="pb-10">Slim fit</li>
-                      <li class="pb-10">Super soft cotton mix</li>
-                      <li class="pb-10">Brushed-back fleece</li>
-                      <li class="pb-10">Graphics at the chest</li>
-                      <li>Our model wears a size 11</li>
-                    </ul>
+        <div class="row faq align-center">
+          <div class="col" style="--w-lg: 6">
+            <img src="./img/faq.jpg" alt="" />
+          </div>
+          <div class="col" style="--w-lg: 6">
+            <div class="accordion">
+              <div class="accordion__item">
+                <input
+                  id="accordion-trigger-1"
+                  class="accordion-trigger-input"
+                  type="checkbox"
+                />
+                <label
+                  class="accordion-trigger fw-500 text-red text-uppercase"
+                  for="accordion-trigger-1"
+                  >STYLE ADVICE</label
+                >
+                <div class="accordion-animation-wrapper d-grid">
+                  <div class="accordion-animation">
+                    <div class="accordion-transform-wrapper">
+                      <ul class="accordion-content">
+                        <li class="pb-10">Inspired by vintage sportswear</li>
+                        <li class="pb-10">Slim fit</li>
+                        <li class="pb-10">Super soft cotton mix</li>
+                        <li class="pb-10">Brushed-back fleece</li>
+                        <li class="pb-10">Graphics at the chest</li>
+                        <li>Our model wears a size 11</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion__item">
-              <input
-                id="accordion-trigger-2"
-                class="accordion-trigger-input"
-                type="checkbox"
-              />
-              <label
-                class="accordion-trigger fw-500 text-red text-uppercase"
-                for="accordion-trigger-2"
-                >Care advice</label
-              >
-              <div class="accordion-animation-wrapper d-grid">
-                <div class="accordion-animation">
-                  <div class="accordion-transform-wrapper">
-                    <ul class="accordion-content">
-                      <li class="pb-10">Inspired by vintage sportswear</li>
-                      <li class="pb-10">Slim fit</li>
-                      <li class="pb-10">Super soft cotton mix</li>
-                      <li class="pb-10">Brushed-back fleece</li>
-                      <li class="pb-10">Graphics at the chest</li>
-                      <li>Our model wears a size 11</li>
-                    </ul>
+              <div class="accordion__item">
+                <input
+                  id="accordion-trigger-2"
+                  class="accordion-trigger-input"
+                  type="checkbox"
+                />
+                <label
+                  class="accordion-trigger fw-500 text-red text-uppercase"
+                  for="accordion-trigger-2"
+                  >Care advice</label
+                >
+                <div class="accordion-animation-wrapper d-grid">
+                  <div class="accordion-animation">
+                    <div class="accordion-transform-wrapper">
+                      <ul class="accordion-content">
+                        <li class="pb-10">Inspired by vintage sportswear</li>
+                        <li class="pb-10">Slim fit</li>
+                        <li class="pb-10">Super soft cotton mix</li>
+                        <li class="pb-10">Brushed-back fleece</li>
+                        <li class="pb-10">Graphics at the chest</li>
+                        <li>Our model wears a size 11</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion__item">
-              <input
-                id="accordion-trigger-3"
-                class="accordion-trigger-input"
-                type="checkbox"
-              />
-              <label
-                class="accordion-trigger fw-500 text-red text-uppercase"
-                for="accordion-trigger-3"
-                >Expert care</label
-              >
-              <div class="accordion-animation-wrapper d-grid">
-                <div class="accordion-animation">
-                  <div class="accordion-transform-wrapper">
-                    <ul class="accordion-content">
-                      <li class="pb-10">Inspired by vintage sportswear</li>
-                      <li class="pb-10">Slim fit</li>
-                      <li class="pb-10">Super soft cotton mix</li>
-                      <li class="pb-10">Brushed-back fleece</li>
-                      <li class="pb-10">Graphics at the chest</li>
-                      <li>Our model wears a size 11</li>
-                    </ul>
+              <div class="accordion__item">
+                <input
+                  id="accordion-trigger-3"
+                  class="accordion-trigger-input"
+                  type="checkbox"
+                />
+                <label
+                  class="accordion-trigger fw-500 text-red text-uppercase"
+                  for="accordion-trigger-3"
+                  >Expert care</label
+                >
+                <div class="accordion-animation-wrapper d-grid">
+                  <div class="accordion-animation">
+                    <div class="accordion-transform-wrapper">
+                      <ul class="accordion-content">
+                        <li class="pb-10">Inspired by vintage sportswear</li>
+                        <li class="pb-10">Slim fit</li>
+                        <li class="pb-10">Super soft cotton mix</li>
+                        <li class="pb-10">Brushed-back fleece</li>
+                        <li class="pb-10">Graphics at the chest</li>
+                        <li>Our model wears a size 11</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -234,79 +226,93 @@
           </div>
         </div>
       </section>
+
       <section class="testimonial section">
         <div class="container">
-          <h2 class="heading text-uppercase text-center pb-30">testimonial</h2>
-          <div class="testimonial__wrap grid-column-2-md">
-            <div class="testimonial__wrap-item hg-100">
-              <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
-              <div class="wrap__content text-center mt-15">
-                <h4>My new shirt</h4>
-                <p class="h5 mt-15">
-                  I've been waiting for this deal since july and just got the
-                  shirt yesterday. What a deal!
-                </p>
-                <p class="mt-15 wrap__content-desc">Eleven</p>
+          <h2 class="heading text-uppercase text-center">testimonial</h2>
+          <div class="row testimonial__wrapper mt-40">
+            <div class="col" style="--w-lg: 4">
+              <div class="testimonial__wrap-item hg-100">
+                <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
+                <div class="wrap__content text-center mt-15">
+                  <h4>My new shirt</h4>
+                  <p class="h5 mt-15">
+                    I've been waiting for this deal since july and just got the
+                    shirt yesterday. What a deal!
+                  </p>
+                  <p class="mt-15 wrap__content-desc">Eleven</p>
+                </div>
               </div>
             </div>
-            <div class="testimonial__wrap-item hg-100">
-              <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
-              <div class="wrap__content text-center mt-15">
-                <h4>My new shirt</h4>
-                <p class="h5 mt-15">
-                  I've been waiting for this deal since july and just got the
-                  shirt yesterday. What a deal!
-                </p>
-                <p class="mt-15 wrap__content-desc">Eleven</p>
+            <div class="col" style="--w-lg: 4">
+              <div class="testimonial__wrap-item hg-100">
+                <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
+                <div class="wrap__content text-center mt-15">
+                  <h4>My new shirt</h4>
+                  <p class="h5 mt-15">
+                    I've been waiting for this deal since july and just got the
+                    shirt yesterday. What a deal!
+                  </p>
+                  <p class="mt-15 wrap__content-desc">Eleven</p>
+                </div>
               </div>
             </div>
-            <div class="testimonial__wrap-item hg-100">
-              <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
-              <div class="wrap__content text-center mt-15">
-                <h4>My new shirt</h4>
-                <p class="h5 mt-15">
-                  I've been waiting for this deal since july and just got the
-                  shirt yesterday. What a deal!
-                </p>
-                <p class="mt-15 wrap__content-desc">Eleven</p>
+            <div class="col" style="--w-lg: 4">
+              <div class="testimonial__wrap-item hg-100">
+                <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
+                <div class="wrap__content text-center mt-15">
+                  <h4>My new shirt</h4>
+                  <p class="h5 mt-15">
+                    I've been waiting for this deal since july and just got the
+                    shirt yesterday. What a deal!
+                  </p>
+                  <p class="mt-15 wrap__content-desc">Eleven</p>
+                </div>
               </div>
             </div>
-            <div class="testimonial__wrap-item hg-100">
-              <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
-              <div class="wrap__content text-center mt-15">
-                <h4>My new shirt</h4>
-                <p class="h5 mt-15">
-                  I've been waiting for this deal since july and just got the
-                  shirt yesterday. What a deal!
-                </p>
-                <p class="mt-15 wrap__content-desc">Eleven</p>
+            <div class="col" style="--w-lg: 4">
+              <div class="testimonial__wrap-item hg-100">
+                <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
+                <div class="wrap__content text-center mt-15">
+                  <h4>My new shirt</h4>
+                  <p class="h5 mt-15">
+                    I've been waiting for this deal since july and just got the
+                    shirt yesterday. What a deal!
+                  </p>
+                  <p class="mt-15 wrap__content-desc">Eleven</p>
+                </div>
               </div>
             </div>
-            <div class="testimonial__wrap-item hg-100">
-              <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
-              <div class="wrap__content text-center mt-15">
-                <h4>My new shirt</h4>
-                <p class="h5 mt-15">
-                  I've been waiting for this deal since july and just got the
-                  shirt yesterday. What a deal!
-                </p>
-                <p class="mt-15 wrap__content-desc">Eleven</p>
+            <div class="col" style="--w-lg: 4">
+              <div class="testimonial__wrap-item hg-100">
+                <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
+                <div class="wrap__content text-center mt-15">
+                  <h4>My new shirt</h4>
+                  <p class="h5 mt-15">
+                    I've been waiting for this deal since july and just got the
+                    shirt yesterday. What a deal!
+                  </p>
+                  <p class="mt-15 wrap__content-desc">Eleven</p>
+                </div>
               </div>
             </div>
-            <div class="testimonial__wrap-item hg-100">
-              <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
-              <div class="wrap__content text-center mt-15">
-                <h4>My new shirt</h4>
-                <p class="h5 mt-15">
-                  I've been waiting for this deal since july and just got the
-                  shirt yesterday. What a deal!
-                </p>
-                <p class="mt-15 wrap__content-desc">Eleven</p>
+            <div class="col" style="--w-lg: 4">
+              <div class="testimonial__wrap-item hg-100">
+                <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
+                <div class="wrap__content text-center mt-15">
+                  <h4>My new shirt</h4>
+                  <p class="h5 mt-15">
+                    I've been waiting for this deal since july and just got the
+                    shirt yesterday. What a deal!
+                  </p>
+                  <p class="mt-15 wrap__content-desc">Eleven</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section class="daily section text-center">
         <div class="daily__content">
           <h2 class="daily__content-title font-family-didot fw-400">
@@ -335,6 +341,7 @@
             Highlight key information to make people quickly impressed by your
             service
           </p>
+
           <div class="deal__wrap mt-50 d-grid grid-column-3-lg grid-column-1">
             <div class="deal__wrap-item">
               <img src="./img/world.png" alt="" />
@@ -356,71 +363,77 @@
           <h2 class="heading fw-400 font-family-didot text-center">
             Update your style
           </h2>
-          <div
-            class="update__wrap d-grid grid-column-2-md grid-column-4-lg mt-50"
-          >
-            <div class="update__wrap-item">
-              <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
-              <div class="wrap__content text-center mt-15">
-                <h4>T-shirt A04</h4>
-                <p
-                  class="price d-flex align-center justify-center mt-15 fw-500"
-                >
-                  $30 <span class="pl-10">$60</span>
-                </p>
-                <a
-                  href=""
-                  class="button__add fw-500 d-block mt-15 text-white text-center"
-                  >Add To Cart</a
-                >
+          <div class="row update__wrap mt-40">
+            <div class="col" style="--w-lg: 3">
+              <div class="update__wrap-item">
+                <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
+                <div class="wrap__content text-center mt-15">
+                  <h4>T-shirt A04</h4>
+                  <p
+                    class="price d-flex align-center justify-center mt-15 fw-500"
+                  >
+                    $30 <span class="pl-10">$60</span>
+                  </p>
+                  <a
+                    href=""
+                    class="button__add fw-500 d-block mt-15 text-white text-center"
+                    >Add To Cart</a
+                  >
+                </div>
               </div>
             </div>
-            <div class="update__wrap-item">
-              <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
-              <div class="wrap__content text-center mt-15">
-                <h4>T-shirt A04</h4>
-                <p
-                  class="price d-flex align-center justify-center mt-15 fw-500"
-                >
-                  $30 <span class="pl-10">$60</span>
-                </p>
-                <a
-                  href=""
-                  class="button__add fw-500 d-block mt-15 text-white text-center"
-                  >Add To Cart</a
-                >
+            <div class="col" style="--w-lg: 3">
+              <div class="update__wrap-item">
+                <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
+                <div class="wrap__content text-center mt-15">
+                  <h4>T-shirt A04</h4>
+                  <p
+                    class="price d-flex align-center justify-center mt-15 fw-500"
+                  >
+                    $30 <span class="pl-10">$60</span>
+                  </p>
+                  <a
+                    href=""
+                    class="button__add fw-500 d-block mt-15 text-white text-center"
+                    >Add To Cart</a
+                  >
+                </div>
               </div>
             </div>
-            <div class="update__wrap-item">
-              <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
-              <div class="wrap__content text-center mt-15">
-                <h4>T-shirt A04</h4>
-                <p
-                  class="price d-flex align-center justify-center mt-15 fw-500"
-                >
-                  $30 <span class="pl-10">$60</span>
-                </p>
-                <a
-                  href=""
-                  class="button__add fw-500 d-block mt-15 text-white text-center"
-                  >Add To Cart</a
-                >
+            <div class="col" style="--w-lg: 3">
+              <div class="update__wrap-item">
+                <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
+                <div class="wrap__content text-center mt-15">
+                  <h4>T-shirt A04</h4>
+                  <p
+                    class="price d-flex align-center justify-center mt-15 fw-500"
+                  >
+                    $30 <span class="pl-10">$60</span>
+                  </p>
+                  <a
+                    href=""
+                    class="button__add fw-500 d-block mt-15 text-white text-center"
+                    >Add To Cart</a
+                  >
+                </div>
               </div>
             </div>
-            <div class="update__wrap-item">
-              <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
-              <div class="wrap__content text-center mt-15">
-                <h4>T-shirt A04</h4>
-                <p
-                  class="price d-flex align-center justify-center mt-15 fw-500"
-                >
-                  $30 <span class="pl-10">$60</span>
-                </p>
-                <a
-                  href=""
-                  class="button__add fw-500 d-block mt-15 text-white text-center"
-                  >Add To Cart</a
-                >
+            <div class="col" style="--w-lg: 3">
+              <div class="update__wrap-item">
+                <img class="w-100 fit-cover" src="./img/product.jpg" alt="" />
+                <div class="wrap__content text-center mt-15">
+                  <h4>T-shirt A04</h4>
+                  <p
+                    class="price d-flex align-center justify-center mt-15 fw-500"
+                  >
+                    $30 <span class="pl-10">$60</span>
+                  </p>
+                  <a
+                    href=""
+                    class="button__add fw-500 d-block mt-15 text-white text-center"
+                    >Add To Cart</a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -431,11 +444,19 @@
           <h2 class="heading fw-400 font-family-didot text-center">
             Get Inspired
           </h2>
-          <div class="get__wrap d-grid grid-column-2-md grid-column-4-lg mt-50">
-            <img class="w-100 fit-cover" src="./img/get1.jpg" alt="" />
-            <img class="w-100 fit-cover" src="./img/get2.jpg" alt="" />
-            <img class="w-100 fit-cover" src="./img/get1.jpg" alt="" />
-            <img class="w-100 fit-cover" src="./img/get1.jpg" alt="" />
+          <div class="row mt-40 get__wrap">
+            <div class="col" style="--w-lg: 3">
+              <img class="w-100 hg-100" src="./img/get1.jpg" alt="" />
+            </div>
+            <div class="col" style="--w-lg: 3">
+              <img class="w-100 hg-100" src="./img/get1.jpg" alt="" />
+            </div>
+            <div class="col" style="--w-lg: 3">
+              <img class="w-100 hg-100" src="./img/get1.jpg" alt="" />
+            </div>
+            <div class="col" style="--w-lg: 3">
+              <img class="w-100 hg-100" src="./img/get1.jpg" alt="" />
+            </div>
           </div>
         </div>
       </section>
